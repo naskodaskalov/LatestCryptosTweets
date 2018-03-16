@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&subset=cyrillic');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper, nav {
+  color: white;
+  background-color: #2B3E50;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #eee;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #eee;
+  border-bottom: 3px solid #eee;
+}
+
+.tweets {
+  margin: 74px 0 0 0;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-dark .navbar-toggler {
+  border-color: #eee;
+}
+
+.navbar-dark .navbar-toggler-icon {
+  color: #eee;
+}
+
+.navbar-dark .navbar-brand {
+  color: #eee;
+  font-size: 32px;
+}
+
+.navbar-dark .navbar-brand:hover {
+  color: #eee;
+}
+
+.copyright {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.copyright a {
+  color: #eee;
+  font-size: 12px;
+}
+
+.copyright a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav, button.navbar-toggler {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-dark .navbar-brand {
+    font-size: 24px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 16px;
+  }
+
+  .tweets {
+    margin: 48px 0 0 0;
+  }
+}
+
+@media (max-width: 370px) {
+  .navbar-dark .navbar-brand {
+    font-size: 18px;
+  }
+
+  .tweets {
+    margin: 48px 0 0 0;
+  }
+}
