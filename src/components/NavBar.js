@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 
+import { Link } from 'react-router-dom';
+
 export default class NavBar extends Component {
   render() {
     return (
       <div className="fixed-top">
         <nav className="navbar navbar-expand-lg navbar-dark">
-          <a className="navbar-brand" href="/">Latest Cryptos Tweets</a>
+          <Link to='/' className="navbar-brand">
+            Latest Cryptos Tweets
+          </Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -22,8 +26,21 @@ export default class NavBar extends Component {
               <a className="nav-link" href="#ripple">Ripple</a>
             </li>
           </ul>
+          <form className="form-inline my-2 my-lg-0">
+            <input
+              className="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              name="twitterName"
+              value={this.props.value}
+              onChange={this.props.onChange} />
+            <button
+              className="btn btn-outline-success my-2 my-sm-0"
+              type="submit"
+              onClick={this.props.onClick}>Search</button>
+          </form>
           </div>
-          
         </nav>
       </div>
     )
