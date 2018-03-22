@@ -8,7 +8,7 @@ export default class NavBar extends Component {
       <div className="fixed-top">
         <nav className="navbar navbar-expand-lg navbar-dark">
           <Link to='/' className="navbar-brand">
-            Latest Cryptos Tweets
+            <h1>Latest Cryptos Tweets</h1>
           </Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@ export default class NavBar extends Component {
             <input
               className="form-control mr-sm-2"
               type="search"
-              placeholder="Search"
+              placeholder="Search for other twitter"
               aria-label="Search"
               name="twitterName"
               value={this.props.value}

@@ -38,6 +38,7 @@ export default class Homepage extends Component {
         <Timeline
         dataSource={{sourceType:"profile", screenName: `${c}`}}
         options={{tweetLimit:"10"}}
+      }
         />
       </div>
     ))

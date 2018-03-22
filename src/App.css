@@ -4,9 +4,17 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+  margin-bottom: 0;
+}
+
 .wrapper, nav {
   color: white;
   background-color: #2B3E50;
+}
+
+.wrapper {
+  min-height: 100vh;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -21,7 +29,7 @@ body {
 }
 
 .tweets {
-  margin: 74px 0 0 0;
+  margin: 63px 0 0 0;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
@@ -35,12 +43,12 @@ body {
   color: #eee;
 }
 
-.navbar-dark .navbar-brand {
+.navbar-dark .navbar-brand h1 {
   color: #eee;
   font-size: 32px;
 }
 
-.navbar-dark .navbar-brand:hover {
+.navbar-dark .navbar-brand:hover h1 {
   color: #eee;
 }
 
@@ -68,7 +76,7 @@ body {
 }
 
 @media (max-width: 500px) {
-  .navbar-dark .navbar-brand {
+  .navbar-dark .navbar-brand h1 {
     font-size: 24px;
   }
 
@@ -82,7 +90,7 @@ body {
 }
 
 @media (max-width: 370px) {
-  .navbar-dark .navbar-brand {
+  .navbar-dark .navbar-brand h1 {
     font-size: 18px;
   }
 
